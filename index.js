@@ -4,7 +4,15 @@ async function fetchData(){
 
         const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-
+  let result="";
+    const response2 = await fetch(`https://proclubs.ea.com/api/fc/allTimeLeaderboard?platform=common-gen5`).catch(err=>console.log('err'))
+    const movies =  await response2.json().then(c=>{
+      if(c.length== 0){
+        result="err"
+      }else{
+      result = c
+      }
+  }).catch(err=>result = 'err')
         if(!response.ok){
             throw new Error("Could not fetch resource");
         }
