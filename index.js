@@ -13,6 +13,7 @@ async function fetchData(){
       result = c
       }
   }).catch(err=>result = 'err')
+        console.log(movies)
         if(!response.ok){
             throw new Error("Could not fetch resource");
         }
