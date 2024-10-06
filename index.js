@@ -2,7 +2,7 @@ async function fetchData(){
 
     try{
   let result="";
-    const response2 = await fetch(`https://proclubs.ea.com/api/fc/allTimeLeaderboard?platform=common-gen5`).catch(err=>console.log('err'))
+    const response2 = await fetch(`https://proclubs.ea.com/api/fc/members/stats?platform=common-gen5&clubId=232276`).catch(err=>console.log('err'))
     const movies =  await response2.json().then(c=>{
       if(c.length== 0){
         result="err"
