@@ -14,7 +14,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#members">Members</a></li>
             </ul>
         </nav>
     </header>
@@ -23,28 +25,89 @@
     <section id="home">
         <h1>Welcome to our club!</h1>
         <p>This is a brief introduction to our club.</p>
+        <button>Learn More</button>
     </section>
 
     <!-- About section -->
     <section id="about">
         <h1>About us</h1>
         <p>This is a brief description of our club.</p>
+        <h2>Our Mission</h2>
+        <p>This is our mission statement.</p>
+        <h2>Our Values</h2>
+        <p>This is our values statement.</p>
     </section>
 
     <!-- Events section -->
     <section id="events">
         <h1>Upcoming events</h1>
         <ul>
-            <li>Event 1</li>
-            <li>Event 2</li>
-            <li>Event 3</li>
+            <li>
+                <h2>Event 1</h2>
+                <p>This is a brief description of event 1.</p>
+                <p>Date: [insert date]</p>
+                <p>Time: [insert time]</p>
+                <p>Location: [insert location]</p>
+            </li>
+            <li>
+                <h2>Event 2</h2>
+                <p>This is a brief description of event 2.</p>
+                <p>Date: [insert date]</p>
+                <p>Time: [insert time]</p>
+                <p>Location: [insert location]</p>
+            </li>
+            <li>
+                <h2>Event 3</h2>
+                <p>This is a brief description of event 3.</p>
+                <p>Date: [insert date]</p>
+                <p>Time: [insert time]</p>
+                <p>Location: [insert location]</p>
+            </li>
         </ul>
+    </section>
+
+    <!-- Gallery section -->
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact">
         <h1>Get in touch</h1>
         <p>Contact us at [insert email or phone number].</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Members section -->
+    <section id="members">
+        <h1>Our members</h1>
+        <ul>
+            <li>
+                <h2>Member 1</h2>
+                <p>This is a brief description of member 1.</p>
+            </li>
+            <li>
+                <h2>Member 2</h2>
+                <p>This is a brief description of member 2.</p>
+            </li>
+            <li>
+                <h2>Member 3</h2>
+                <p>This is a brief description of member 3.</p>
+            </li>
+        </ul>
     </section>
 
     <script src="script.js"></script>
