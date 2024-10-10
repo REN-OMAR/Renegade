@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Club Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
-    <button onclick="fetchData()">Fetch Pokemonnn</button><br>
-    
-    <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none">
-    
-    <script src="index.js"></script>
+    <!-- Home section -->
+    <section id="home">
+        <h1>Welcome to our club!</h1>
+        <p>This is a brief introduction to our club.</p>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h1>About us</h1>
+        <p>This is a brief description of our club.</p>
+    </section>
+
+    <!-- Events section -->
+    <section id="events">
+        <h1>Upcoming events</h1>
+        <ul>
+            <li>Event 1</li>
+            <li>Event 2</li>
+            <li>Event 3</li>
+        </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h1>Get in touch</h1>
+        <p>Contact us at [insert email or phone number].</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
